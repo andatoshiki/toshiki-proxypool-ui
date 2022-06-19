@@ -18,8 +18,6 @@ jobs:
 
       - name: Publish package to gh NPM registry
         run: echo @andatoshiki:registry=https://npm.pkg.github.com > .npmrc
-        with:
-          node-version: 16
       
       - name: Publish package to NPM
         uses: JS-DevTools/npm-publish@v1
