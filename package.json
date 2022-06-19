@@ -1,5 +1,5 @@
 {
-  "name": "toshiki-proxypool-ui",
+  "name": "@andatoshiki/toshiki-proxypool-ui",
   "author": "Anda Toshiki <andatoshiki@outlook.com>",
   "description": "🎨 Static web UI components of toshiki-proxypool mirrors of JsDelivr CDN from GitHub, but UNPKG",
   "license": "GPL-3.0 license",
@@ -13,7 +13,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss-watch": "sass --watch --no-source-map scss:css -s compressed",
-    "scss-build": "sass --no-source-map scss:css -s compressed"
+    "scss-build": "sass --no-source-map scss:css -s compressed",
+    "postpublish": "npm run publish-npm",
+    "publish-npm": "npm publish --access public --ignore-scripts --@andatoshiki:registry='https://registry.npmjs.org'"
   },
   "devDependencies": {
     "bulma": "^0.9.4"
@@ -24,11 +26,5 @@
   },
   "dependencies": {
     "bulma": "^0.9.4"
-  },
-  "publishConfig": {
-    "registry": [
-      "https://npm.pkg.github.com",
-      "https://registry.npmjs.org"
-    ]
   }
 }
