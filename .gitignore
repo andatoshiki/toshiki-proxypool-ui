@@ -2,4 +2,3 @@
 *.yaml
 *.conf
 node_modules/*
-static/*

@@ -1,5 +1,9 @@
 {
   "name": "toshiki-proxypool-ui",
+  "name": "toshiki-proxypool-ui",
+  "author": "Anda Toshiki<andatoshiki@outlook.com>",
+  "description": "UI files for toshiki-proxypool",
+  "license": " GPL-3.0 license",
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
