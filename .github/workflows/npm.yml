@@ -17,8 +17,8 @@ jobs:
       - name: Set up Node and install deps
         run: npm install
 
-      - name: Publish package to gh NPM registry
-        run: echo @andatoshiki:registry=https://npm.pkg.github.com > .npmrc
+      # - name: Publish package to gh NPM registry
+        # run: echo @andatoshiki:registry=https://npm.pkg.github.com > .npmrc
       
       - name: Publish package to NPM
         uses: JS-DevTools/npm-publish@v1
