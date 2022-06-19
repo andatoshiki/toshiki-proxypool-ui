@@ -15,5 +15,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/andatoshiki/toshiki-proxypool-ui.git"
+  },
+  "dependencies": {
+    "quixote": "^1.0.1"
   }
 }
