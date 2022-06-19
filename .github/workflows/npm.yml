@@ -5,11 +5,22 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Check out code and set up Node
+        uses: actions/checkout@v3
         with:
-          node-version: 12
-      - run: npm install
-      - uses: JS-DevTools/npm-publish@v1
+          node-version: 16
+
+      
+      - name: Set up Node and install deps
+        run: npm install
+        uses: actions/setup-node@v3
+
+      - name: Publish package to gh NPM registry
+        run: echo @andatoshiki:registry=https://npm.pkg.github.com > .npmrc
+        with:
+          node-version: 16
+      
+      - name: Publish package to NPM
+        uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
