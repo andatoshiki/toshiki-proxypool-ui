@@ -1,9 +1,8 @@
 {
   "name": "toshiki-proxypool-ui",
-  "name": "toshiki-proxypool-ui",
-  "author": "Anda Toshiki<andatoshiki@outlook.com>",
-  "description": "UI files for toshiki-proxypool",
-  "license": " GPL-3.0 license",
+  "author": "Anda Toshiki <andatoshiki@outlook.com>",
+  "description": "🎨 Static web UI components of toshiki-proxypool mirrors of JsDelivr CDN from GitHub, but UNPKG",
+  "license": "GPL-3.0 license",
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,5 +11,9 @@
   },
   "devDependencies": {
     "bulma": "^0.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andatoshiki/toshiki-proxypool-ui.git"
   }
 }
