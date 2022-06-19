@@ -10,7 +10,7 @@
     "scss-build": "sass --no-source-map scss:css -s compressed"
   },
   "devDependencies": {
-    "bulma": "^0.9.1"
+    "bulma": "^0.9.4"
   },
   "repository": {
     "type": "git",
