@@ -3,7 +3,7 @@
   "author": "Anda Toshiki <andatoshiki@outlook.com>",
   "description": "🎨 Static web UI components of toshiki-proxypool mirrors of JsDelivr CDN from GitHub, but UNPKG",
   "license": "GPL-3.0 license",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss-watch": "sass --watch --no-source-map scss:css -s compressed",
