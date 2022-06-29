@@ -58,7 +58,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0px 0 1px rgba(10,10,10,.02);
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, .1), 0 0px 0 1px rgba(10, 10, 10, .02);
     transition: all .4s;
 }
 
@@ -68,8 +68,8 @@ body {
     pointer-events: auto;
 }
 
-.notification i{
-    font-size:  3em;
+.notification i {
+    font-size: 3em;
     margin: auto;
 }
 
@@ -87,13 +87,51 @@ body {
         transition: all .4s;
         pointer-events: none;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         position: relative;
     }
+
     .navbar-menu.is-active {
-        z-index:1;
+        z-index: 1;
         opacity: 1;
         transform: none;
         pointer-events: auto;
+    }
+}
+
+/* Pumping font awesome heat style */
+.pump {
+    /* size of the heart */
+    /* font-size: 10px; */
+    /* color of the heart */
+    color: rgba(255, 0, 0, 0.1);
+    animation: pump
+        /*the first one corresponds to heart pumping speed, the huger the slower*/
+        600ms 0ms infinite linear reverse
+}
+
+@keyframes pump {
+    from {
+        color: rgba(207, 40, 104, 0.1);
+    }
+
+    to {
+        color: rgb(241, 19, 104);
+    }
+}
+
+.star {
+    color: rgba(126, 90, 13, 0.1);
+    animation: star 600ms 0ms infinite linear reverse
+}
+
+@keyframes star {
+    from {
+        color: rgba(126, 90, 13, 0.1);
+    }
+
+    to {
+        color: rgb(247, 215, 4);
     }
 }
