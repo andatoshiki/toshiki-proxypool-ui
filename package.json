@@ -18,13 +18,13 @@
     "publish-npm": "npm publish --access public --ignore-scripts --@andatoshiki:registry='https://registry.npmjs.org'"
   },
   "devDependencies": {
-    "bulma": "^0.9.4"
+    "bulma": "^1.0.4"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/andatoshiki/toshiki-proxypool-ui.git"
   },
   "dependencies": {
-    "bulma": "^0.9.4"
+    "bulma": "^1.0.4"
   }
 }
